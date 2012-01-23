@@ -1,11 +1,23 @@
 == Subliminal Hippo's Passthru App ==
 
 This is a Passthru Application for Rails projects. 
-It is currently an application that allows users (agents) of the web application to view sites (such as imgur.com, referred in this document as the "copied site") while still on the author's domain name (e.g. mydomain.com/imgur). At the present moment, it does this by routing most requests to the Passthru controller that uses regex to parse given site names. 
+It is currently an application that allows users (agents) of the web application
+ to view sites (such as imgur.com, referred in this document as the "copied site")
+  while still on the author's domain name (e.g. mydomain.com/imgur). At the 
+  present moment, it does this by routing most requests to the Passthru controller
+   that uses regex to parse given site names. 
 
-It works for a good number of sites, but there are still some nuances that I would like to fix. For one, relative links will generally bring you to a successful page that will still have the author's domain name (src="/photos/ leads to mydomain.com/imgur/photos); however, absolute links will move away from the author's domain. I may make some changes so that some absolute links, such as those that have the same domain as the copied site, will stay on the author's domain. 
 
-I am also planning on making this a gem (my first one!) as opposed to a web application. 
+It works for a good number of sites, but there are still some nuances that I would
+ like to fix. For one, relative links will generally bring you to a successful 
+ page that will still have the author's domain name (src="/photos/ leads to 
+ mydomain.com/imgur/photos); however, absolute links will move away from the 
+ author's domain. I may make some changes so that some absolute links, such as 
+ those that have the same domain as the copied site, will stay on the author's 
+ domain. 
+
+I am also planning on making this a gem (my first one!) as opposed to a web
+ application. 
 
 Please feel free to give me any advice, questions, and concerns. 
 
