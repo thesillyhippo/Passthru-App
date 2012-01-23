@@ -1,6 +1,6 @@
 Rubyroute::Application.routes.draw do
 
-  get '*path_url' => 'blog#index'
+  get '*path_url' => 'passthru#index'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
